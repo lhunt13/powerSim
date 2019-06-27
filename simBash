@@ -9,5 +9,5 @@
 
 mkdir -p results
 if [ ! -f "/results/run-$SGE_TASK_ID" ]; then
-  Rscript doSimParal.R $SGE_TASK_ID 1000 5 .75 1 20 1000
+  Rscript simParal.R $SGE_TASK_ID 1000 5 .75 1 20 1000
 fi

@@ -12,6 +12,7 @@ delay = as.numeric(args[3])
 late_effect = as.numeric(args[4])
 early_effect = as.numeric(args[5])
 tau = as.numeric(args[6])
+tval = as.numeric(args[7])
 
 set.seed(123)
 boot.seed <- sample(1e6, size = tval, replace = F)[boot.index]

@@ -5,9 +5,9 @@
 #$ -cwd
 #$ -j y
 #$ -R y
-#$ -t 1-100
+#$ -t 1-1000
 
 mkdir -p results
 if [ ! -f "/results/run-$SGE_TASK_ID" ]; then
-  Rscript doSimParal.R $SGE_TASK_ID 100 1000 5 .75 1 20
+  Rscript doSimParal.R $SGE_TASK_ID 1000 5 .75 1 20 1000
 fi
